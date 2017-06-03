@@ -1,0 +1,11 @@
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\bin\Debug\ReadWriteExcel.exe.config
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\bin\Debug\ReadWriteExcel.exe
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\bin\Debug\ReadWriteExcel.pdb
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\bin\Debug\ReadWriteExcel.xml
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.vbprojResolveAssemblyReference.cache
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.vbproj.ResolveComReference.cache
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.Resources.resources
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.vbproj.GenerateResource.Cache
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.exe
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.xml
+D:\visual studio 2017\Projects\ReadWriteExcel\ReadWriteExcel\obj\Debug\ReadWriteExcel.pdb
