@@ -1,4 +1,5 @@
 ﻿Imports Excel = Microsoft.Office.Interop.Excel
+
 Module Module1
     Dim worksheet As Excel.Worksheet
     Dim workbook As Excel.Workbook
@@ -31,10 +32,8 @@ Module Module1
                 Console.WriteLine("********************************************")
                 Console.WriteLine("---------------------------------------")
                 While True
-                    rFoundCell = .Columns(5).Find(What:=searchText, After:=rFoundCell,
-                    LookIn:=xlValues, LookAt:=xlPart, SearchOrder:=xlByRows,
-                    SearchDirection:=xlNext, MatchCase:=False)
-                    If Not rFoundCell Is Nothing Then
+                    rFoundCell = find(worksheet, searchText, "E1", 5)
+                    If rFoundCell IsNot Nothing Then
                         Dim foundRow As Long = rFoundCell.Row
                         Dim foundColumn As Long = rFoundCell.Column
                         If preventRow < foundRow Then
@@ -97,9 +96,7 @@ Module Module1
                 Console.WriteLine("********************************************")
                 Console.WriteLine("---------------------------------------")
                 While True
-                    rFoundCell = .Columns(3).Find(What:=searchText, After:=rFoundCell,
-                    LookIn:=xlValues, LookAt:=xlPart, SearchOrder:=xlByRows,
-                    SearchDirection:=xlNext, MatchCase:=False)
+                    rFoundCell = find(worksheet, searchText, "C1", 3)
                     If Not rFoundCell Is Nothing Then
                         Dim foundRow As Long = rFoundCell.Row
                         Dim foundColumn As Long = rFoundCell.Column
@@ -135,4 +132,13 @@ Module Module1
             Console.WriteLine(ex)
         End Try
     End Sub
+    Public Function find(worksheet, searchText, rangeExcel, ColumnIndex) As Excel.Range
+        With worksheet
+            Dim rFoundCell = .Range(rangeExcel)
+            rFoundCell = .Columns(ColumnIndex).Find(What:=searchText, After:=rFoundCell,
+                        LookIn:=xlValues, LookAt:=xlPart, SearchOrder:=xlByRows,
+                        SearchDirection:=xlNext, MatchCase:=False)
+            Return rFoundCell
+        End With
+    End Function
 End Module
